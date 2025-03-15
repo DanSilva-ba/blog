@@ -12,7 +12,7 @@ interface DataSmallCard {
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent,MenuTitleComponent, BigCardComponent, SmallCardComponent, CommonModule],
+  imports: [MenuTitleComponent, BigCardComponent, SmallCardComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
