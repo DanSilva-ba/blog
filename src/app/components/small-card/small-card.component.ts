@@ -14,4 +14,11 @@ interface SmallCardData{
 })
 
 export class SmallCardComponent{
+  @Input()
+  imageUrl : String = ""
+  @Input()
+  title : String = ""
+  constructor(){
+
+  }
 }
