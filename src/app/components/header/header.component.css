@@ -1,0 +1,17 @@
+#containee__menu-bar{
+    height: 50px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+}
+
+ul{ 
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#containee__menu-bar > ul > li {
+   margin-right: 20px;
+   list-style: none;
+}
