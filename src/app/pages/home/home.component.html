@@ -2,10 +2,10 @@
 <app-menu-title></app-menu-title>
 <div class="articles">
     <div class="articles__main">
-        <app-big-card [photoCover]="'https://ideausher.com/wp-content/uploads/2022/08/Flutter-App-Development-Cover.webp'" [cardTitle]="'Nova versão do flutter'" [cardDescription]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'"></app-big-card>
+        <app-big-card *ngFor="let item of listBigCard" [photoCover]='item.imageUrl' [cardTitle]='item.title' [cardDescription]='item.description' > </app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card *ngFor="let p of list" [imageUrl]= 'p.url' [title]='p.title' ></app-small-card>
+        <app-small-card *ngFor="let p of listSmallCard" [imageUrl]= 'p.url' [title]='p.title' ></app-small-card>
     </div>
 </div>
 <br>

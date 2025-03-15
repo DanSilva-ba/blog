@@ -17,6 +17,9 @@
     height: 500px;
 }
 
+.content_description{
+    padding: 10px;
+}
 .content_description > p{
     color: gray;
 }
